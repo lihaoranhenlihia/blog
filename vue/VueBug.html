@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 中遇到的 BUG | 李浩然的个人博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/icon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-icon-152x152-dunplab-manifest-2914.ico">
+    <meta name="description" content="Just remeber some thing">
+    <meta name="keywords" content="李浩然的个人博客 html">
+    <meta name="author" content="李浩然">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/apple-icon-144x144-dunplab-manifest-2914.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.61d48021.css" as="style"><link rel="preload" href="/assets/js/app.50b8492d.js" as="script"><link rel="preload" href="/assets/js/5.d54ea942.js" as="script"><link rel="preload" href="/assets/js/2.5303703b.js" as="script"><link rel="preload" href="/assets/js/24.0cfe81ef.js" as="script"><link rel="preload" href="/assets/js/3.fedda29c.js" as="script"><link rel="prefetch" href="/assets/js/10.0c0a7067.js"><link rel="prefetch" href="/assets/js/11.ca2f0d37.js"><link rel="prefetch" href="/assets/js/12.e1453921.js"><link rel="prefetch" href="/assets/js/13.823707ed.js"><link rel="prefetch" href="/assets/js/14.2bf433c7.js"><link rel="prefetch" href="/assets/js/15.f2dcb714.js"><link rel="prefetch" href="/assets/js/16.0efaf9e9.js"><link rel="prefetch" href="/assets/js/17.43385b14.js"><link rel="prefetch" href="/assets/js/18.ad5c43c1.js"><link rel="prefetch" href="/assets/js/19.92274233.js"><link rel="prefetch" href="/assets/js/20.24c72954.js"><link rel="prefetch" href="/assets/js/21.4e2f88d3.js"><link rel="prefetch" href="/assets/js/22.4993cc59.js"><link rel="prefetch" href="/assets/js/23.b619a06e.js"><link rel="prefetch" href="/assets/js/25.f1eee312.js"><link rel="prefetch" href="/assets/js/4.eab665ed.js"><link rel="prefetch" href="/assets/js/6.c0c4dbca.js"><link rel="prefetch" href="/assets/js/7.575d3f5c.js"><link rel="prefetch" href="/assets/js/8.3e107b1e.js"><link rel="prefetch" href="/assets/js/9.692b887e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.61d48021.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.jpg" alt="李浩然的个人博客" class="logo"> <span class="site-name can-hide">李浩然的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html/" class="nav-link">
+  html
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/vue/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html/" class="nav-link">
+  html
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/vue/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue 中遇到的 BUG</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/VueBug.html#当出现-xxx-is-defined-but-never-used" class="sidebar-link">当出现&quot;xxx is defined,but never used&quot;</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#当-vue-组件中，我们一开始没有赋值的时候，后面通过请求来进行普通赋值的时候，我们会发现值虽然赋上了，但是页面没有变化例如-img-的-src-属性，我们可以通过以下做法来进行明确告诉-vue-实例，给数据中的某一个属性添加一个新属性" class="sidebar-link">当 Vue 组件中，我们一开始没有赋值的时候，后面通过请求来进行普通赋值的时候，我们会发现值虽然赋上了，但是页面没有变化例如 Img 的 src 属性，我们可以通过以下做法来进行明确告诉 Vue 实例，给数据中的某一个属性添加一个新属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#由于动态路由也是传递-params-的，所以在-this-router-push-方法中-path-不能和-params-一起使用，否则-params-将无效。需要用-name-来指定页面。" class="sidebar-link">由于动态路由也是传递 params 的，所以在 this.\$router.push() 方法中 path 不能和 params 一起使用，否则 params 将无效。需要用 name 来指定页面。</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#swiper-的简单配置" class="sidebar-link">swiper 的简单配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#解构赋值" class="sidebar-link">解构赋值</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#vue-项目的优化策略" class="sidebar-link">Vue 项目的优化策略</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#axios-请求失败，如何拿到错误响应信息" class="sidebar-link">axios 请求失败，如何拿到错误响应信息</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/VueBug.html#element-中间按需导入发生的问题" class="sidebar-link">element 中间按需导入发生的问题</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-中遇到的-bug"><a href="#vue-中遇到的-bug" class="header-anchor">#</a> Vue 中遇到的 BUG</h1> <h2 id="当出现-xxx-is-defined-but-never-used"><a href="#当出现-xxx-is-defined-but-never-used" class="header-anchor">#</a> 当出现&quot;xxx is defined,but never used&quot;</h2> <ul><li>在.eslintrc 中的 rules 中加入&quot;'no-unused-vars': 'off'&quot;即可</li></ul> <h2 id="当-vue-组件中，我们一开始没有赋值的时候，后面通过请求来进行普通赋值的时候，我们会发现值虽然赋上了，但是页面没有变化例如-img-的-src-属性，我们可以通过以下做法来进行明确告诉-vue-实例，给数据中的某一个属性添加一个新属性"><a href="#当-vue-组件中，我们一开始没有赋值的时候，后面通过请求来进行普通赋值的时候，我们会发现值虽然赋上了，但是页面没有变化例如-img-的-src-属性，我们可以通过以下做法来进行明确告诉-vue-实例，给数据中的某一个属性添加一个新属性" class="header-anchor">#</a> 当 Vue 组件中，我们一开始没有赋值的时候，后面通过请求来进行普通赋值的时候，我们会发现值虽然赋上了，但是页面没有变化例如 Img 的 src 属性，我们可以通过以下做法来进行明确告诉 Vue 实例，给数据中的某一个属性添加一个新属性</h2> <ul><li><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">this</span><span class="token punctuation">.</span>$<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">,</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+</code></pre></div></li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+* 如果我们不想这麽麻烦的话，我们可以通过在建立组建的时候，就将我们需要使用新值得属性定义好，可以先暂时定义为空或者''
+
+```javascript
+data(){
+    return {
+        model:{
+            icon:'',
+            icon:null
+        }
+    }
+}
+</code></pre></div><h2 id="由于动态路由也是传递-params-的，所以在-this-router-push-方法中-path-不能和-params-一起使用，否则-params-将无效。需要用-name-来指定页面。"><a href="#由于动态路由也是传递-params-的，所以在-this-router-push-方法中-path-不能和-params-一起使用，否则-params-将无效。需要用-name-来指定页面。" class="header-anchor">#</a> 由于动态路由也是传递 params 的，所以在 this.$router.push() 方法中 path 不能和 params 一起使用，否则 params 将无效。需要用 name 来指定页面。</h2> <ul><li><strong>通过 name 获取页面，传递 params：</strong></li> <li><strong>**在目标页面通过 this.$route.params 获取参数：**</strong></li> <li>name 和 params 配对 path 和 query 配对</li></ul> <h2 id="swiper-的简单配置"><a href="#swiper-的简单配置" class="header-anchor">#</a> swiper 的简单配置</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>swiperOption<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">//用于swiper的:option传递参数</span>
+        pagination<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">//用于点的显示</span>
+          el<span class="token operator">:</span> <span class="token string">'.pagination-home'</span> <span class="token comment">//点显示的选择类名</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        autoplay<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">//自动播放</span>
+          delay<span class="token operator">:</span> <span class="token number">2000</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        loop<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//循环播放</span>
+        observer<span class="token operator">:</span> <span class="token boolean">true</span><span class="token comment">//自动初始化</span>
+      <span class="token punctuation">}</span>
+</code></pre></div><h2 id="解构赋值"><a href="#解构赋值" class="header-anchor">#</a> 解构赋值</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token operator">:</span> res <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">)</span>
+</code></pre></div><ul><li>上面这句话的意思是结构请求数据中的 data 数据赋值给 res</li></ul> <h2 id="vue-项目的优化策略"><a href="#vue-项目的优化策略" class="header-anchor">#</a> Vue 项目的优化策略</h2> <ul><li>生成打包报告</li> <li>第三方库启用 cdn 引入</li> <li>element 等第三方快速框架库，进行按需加载</li> <li>路由懒加载‘</li> <li>首页内容定制</li></ul> <h2 id="axios-请求失败，如何拿到错误响应信息"><a href="#axios-请求失败，如何拿到错误响应信息" class="header-anchor">#</a> axios 请求失败，如何拿到错误响应信息</h2> <ul><li><code>需要在then中的处理方法中传递（error.response）或者直接使用结构赋值({response})</code></li></ul> <h2 id="element-中间按需导入发生的问题"><a href="#element-中间按需导入发生的问题" class="header-anchor">#</a> element 中间按需导入发生的问题</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Pagination<span class="token punctuation">)</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Dialog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+···省略···
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Footer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Loading<span class="token punctuation">.</span>directive<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$loading <span class="token operator">=</span> Loading<span class="token punctuation">.</span>service<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$msgbox <span class="token operator">=</span> MessageBox<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$alert <span class="token operator">=</span> MessageBox<span class="token punctuation">.</span>alert<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$confirm <span class="token operator">=</span> MessageBox<span class="token punctuation">.</span>confirm<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$prompt <span class="token operator">=</span> MessageBox<span class="token punctuation">.</span>prompt<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$notify <span class="token operator">=</span> Notification<span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$message <span class="token operator">=</span> Message<span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">2020年7月14日星期二晚上11点13分</span></div></footer> <!---->  <!----></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.50b8492d.js" defer></script><script src="/assets/js/5.d54ea942.js" defer></script><script src="/assets/js/2.5303703b.js" defer></script><script src="/assets/js/24.0cfe81ef.js" defer></script><script src="/assets/js/3.fedda29c.js" defer></script>
+  </body>
+</html>

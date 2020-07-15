@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模块化进化史教程 | 李浩然的个人博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/icon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-icon-152x152-dunplab-manifest-2914.ico">
+    <meta name="description" content="Just remeber some thing">
+    <meta name="keywords" content="李浩然的个人博客 html">
+    <meta name="author" content="李浩然">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/apple-icon-144x144-dunplab-manifest-2914.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.61d48021.css" as="style"><link rel="preload" href="/assets/js/app.50b8492d.js" as="script"><link rel="preload" href="/assets/js/5.d54ea942.js" as="script"><link rel="preload" href="/assets/js/2.5303703b.js" as="script"><link rel="preload" href="/assets/js/19.92274233.js" as="script"><link rel="preload" href="/assets/js/3.fedda29c.js" as="script"><link rel="prefetch" href="/assets/js/10.0c0a7067.js"><link rel="prefetch" href="/assets/js/11.ca2f0d37.js"><link rel="prefetch" href="/assets/js/12.e1453921.js"><link rel="prefetch" href="/assets/js/13.823707ed.js"><link rel="prefetch" href="/assets/js/14.2bf433c7.js"><link rel="prefetch" href="/assets/js/15.f2dcb714.js"><link rel="prefetch" href="/assets/js/16.0efaf9e9.js"><link rel="prefetch" href="/assets/js/17.43385b14.js"><link rel="prefetch" href="/assets/js/18.ad5c43c1.js"><link rel="prefetch" href="/assets/js/20.24c72954.js"><link rel="prefetch" href="/assets/js/21.4e2f88d3.js"><link rel="prefetch" href="/assets/js/22.4993cc59.js"><link rel="prefetch" href="/assets/js/23.b619a06e.js"><link rel="prefetch" href="/assets/js/24.0cfe81ef.js"><link rel="prefetch" href="/assets/js/25.f1eee312.js"><link rel="prefetch" href="/assets/js/4.eab665ed.js"><link rel="prefetch" href="/assets/js/6.c0c4dbca.js"><link rel="prefetch" href="/assets/js/7.575d3f5c.js"><link rel="prefetch" href="/assets/js/8.3e107b1e.js"><link rel="prefetch" href="/assets/js/9.692b887e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.61d48021.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.jpg" alt="李浩然的个人博客" class="logo"> <span class="site-name can-hide">李浩然的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html/" class="nav-link">
+  html
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/vue/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html/" class="nav-link">
+  html
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/vue/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/AMD.html" class="sidebar-link">require.js使用教程</a></li><li><a href="/js/CommonJS-Browserify.html" class="sidebar-link">Browserify模块化使用教程</a></li><li><a href="/js/ES6-module.html" class="sidebar-link">ES6-Babel-Browserify使用教程</a></li><li><a href="/js/" aria-current="page" class="sidebar-link">我是 css 首页</a></li><li><a href="/js/commonJS.html" class="sidebar-link">Node.js模块化教程</a></li><li><a href="/js/js-1.html" class="sidebar-link">/js/js-1.html</a></li><li><a href="/js/js-module-history.html" aria-current="page" class="active sidebar-link">模块化进化史教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/js-module-history.html#模块化进化史教程" class="sidebar-link">模块化进化史教程</a></li></ul></li><li><a href="/js/seaJS.html" class="sidebar-link">sea.js简单使用教程</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="模块化进化史教程"><a href="#模块化进化史教程" class="header-anchor">#</a> 模块化进化史教程</h2> <ol><li>全局function模式</li></ol> <ul><li>module1.js<div class="language- extra-class"><pre class="language-text"><code>//数据
+let data = 'atguigu.com'
+
+//操作数据的函数
+function foo() {
+  console.log(`foo() ${data}`)
+}
+function bar() {
+  console.log(`bar() ${data}`)
+}
+</code></pre></div></li> <li>module2.js<div class="language- extra-class"><pre class="language-text"><code>let data2 = 'other data';
+
+function foo() {  //与另一个模块中的函数冲突了
+  console.log(`foo() ${data2}`)
+}
+</code></pre></div></li> <li>test1.html<div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;module1.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module2.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  let data = &quot;修改后的数据&quot;
+  foo()
+  bar()
+&lt;/script&gt;
+</code></pre></div></li> <li>说明:
+<ul><li>全局函数模式: 将不同的功能封装成不同的全局函数</li> <li>问题: Global被污染了, 很容易引起命名冲突</li></ul></li></ul> <ol start="2"><li>namespace模式</li></ol> <ul><li>module1.js<div class="language- extra-class"><pre class="language-text"><code>let myModule = {
+  data: 'atguigu.com',
+  foo() {
+    console.log(`foo() ${this.data}`)
+  },
+  bar() {
+    console.log(`bar() ${this.data}`)
+  }
+}
+</code></pre></div></li> <li>module2.js<div class="language- extra-class"><pre class="language-text"><code>let myModule2 = {
+  data: 'atguigu.com2222',
+  foo() {
+    console.log(`foo() ${this.data}`)
+  },
+  bar() {
+    console.log(`bar() ${this.data}`)
+  }
+}
+</code></pre></div></li> <li>test2.html<div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;module2.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module22.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  myModule.foo()
+  myModule.bar()
+
+  myModule2.foo()
+  myModule2.bar()
+
+  myModule.data = 'other data' //能直接修改模块内部的数据
+  myModule.foo()
+
+&lt;/script&gt;
+</code></pre></div></li> <li>说明
+<ul><li>namespace模式: 简单对象封装</li> <li>作用: 减少了全局变量</li> <li>问题: 不安全</li></ul></li></ul> <ol start="3"><li>IIFE模式</li></ol> <ul><li>module3.js<div class="language- extra-class"><pre class="language-text"><code>(function (window) {
+  //数据
+  let data = 'atguigu.com'
+
+  //操作数据的函数
+  function foo() { //用于暴露有函数
+    console.log(`foo() ${data}`)
+  }
+
+  function bar() {//用于暴露有函数
+    console.log(`bar() ${data}`)
+    otherFun() //内部调用
+  }
+
+  function otherFun() { //内部私有的函数
+    console.log('otherFun()')
+  }
+
+  //暴露行为
+  window.myModule = {foo, bar}
+})(window)
+</code></pre></div></li> <li>test3.html<div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;module3.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  myModule.foo()
+  myModule.bar()
+  //myModule.otherFun()  //myModule.otherFun is not a function
+  console.log(myModule.data) //undefined 不能访问模块内部数据
+  myModule.data = 'xxxx' //不是修改的模块内部的data
+  myModule.foo() //没有改变
+
+&lt;/script&gt;
+</code></pre></div></li> <li>说明:
+<ul><li>IIFE模式: 匿名函数自调用(闭包)</li> <li>IIFE : immediately-invoked function expression(立即调用函数表达式)</li> <li>作用: 数据是私有的, 外部只能通过暴露的方法操作</li> <li>问题: 如果当前这个模块依赖另一个模块怎么办?</li></ul></li></ul> <ol start="4"><li>IIFE模式增强</li></ol> <ul><li>引入jquery到项目中</li> <li>module4.js<div class="language- extra-class"><pre class="language-text"><code>(function (window, $) {
+  //数据
+  let data = 'atguigu.com'
+
+  //操作数据的函数
+  function foo() { //用于暴露有函数
+    console.log(`foo() ${data}`)
+    $('body').css('background', 'red')
+  }
+
+  function bar() {//用于暴露有函数
+    console.log(`bar() ${data}`)
+    otherFun() //内部调用
+  }
+
+  function otherFun() { //内部私有的函数
+    console.log('otherFun()')
+  }
+
+  //暴露行为
+  window.myModule = {foo, bar}
+})(window, jQuery)
+</code></pre></div></li> <li>test4.html<div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.10.1.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  myModule.foo()
+&lt;/script&gt;
+</code></pre></div></li> <li>说明
+<ul><li>IIFE模式增强 : 引入依赖</li> <li>这就是现代模块实现的基石</li></ul></li></ul> <ol start="5"><li>页面加载多个js的问题</li></ol> <ul><li>页面:<div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;module1.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module2.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module3.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;module4.js&quot;&gt;&lt;/script&gt;
+</code></pre></div></li> <li>说明
+<ul><li>一个页面需要引入多个js文件</li> <li>问题:
+<ul><li>请求过多</li> <li>依赖模糊</li> <li>难以维护</li></ul></li> <li>这些问题可以通过现代模块化编码和项目构建来解决</li></ul></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">2020年7月14日星期二晚上11点13分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js/js-1.html" class="prev">
+        /js/js-1.html
+      </a></span> <span class="next"><a href="/js/seaJS.html">
+        sea.js简单使用教程
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.50b8492d.js" defer></script><script src="/assets/js/5.d54ea942.js" defer></script><script src="/assets/js/2.5303703b.js" defer></script><script src="/assets/js/19.92274233.js" defer></script><script src="/assets/js/3.fedda29c.js" defer></script>
+  </body>
+</html>
